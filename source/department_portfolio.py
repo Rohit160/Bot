@@ -34,5 +34,82 @@ def department_portfolio():
          obj=tds[0].text +" : "+ tds[2].text 
         #  portfolio_arr.append()
          portfolio_arr.append(obj)
+    def department_portfolio():
+    url = portfolio()
+    page = requests.get(url)
+    soup = BeautifulSoup(page.content, 'html5lib') 
+    portfolio_arr = []
+    c=0
+    table = soup.find_all('div' , {"id":"home"})
+    f= table[0].find_all('table', {"class":"profilemain"})
+    for table in f:
+      c +=1
+    for i in range(0,c):
+      print("\n")
+      table = soup.find_all('table', )[i].tbody.findAll('tr')
+      for element in table :
+         obj = {}
+         tds=element.findAll('td')
+         obj=tds[0].text +" : "+ tds[2].text 
+        #  portfolio_arr.append()
+         portfolio_arr.append(obj)
+     def department_portfolio():
+    url = portfolio()
+    page = requests.get(url)
+    soup = BeautifulSoup(page.content, 'html5lib') 
+    portfolio_arr = []
+    c=0
+    table = soup.find_all('div' , {"id":"home"})
+    f= table[0].find_all('table', {"class":"profilemain"})
+    for table in f:
+      c +=1
+    for i in range(0,c):
+      print("\n")
+      table = soup.find_all('table', )[i].tbody.findAll('tr')
+      for element in table :
+         obj = {}
+         tds=element.findAll('td')
+         obj=tds[0].text +" : "+ tds[2].text 
+        #  portfolio_arr.append()
+         portfolio_arr.append(obj)
+      def department_portfolio():
+    url = portfolio()
+    page = requests.get(url)
+    soup = BeautifulSoup(page.content, 'html5lib') 
+    portfolio_arr = []
+    c=0
+    table = soup.find_all('div' , {"id":"home"})
+    f= table[0].find_all('table', {"class":"profilemain"})
+    for table in f:
+      c +=1
+    for i in range(0,c):
+      print("\n")
+      table = soup.find_all('table', )[i].tbody.findAll('tr')
+      for element in table :
+         obj = {}
+         tds=element.findAll('td')
+         obj=tds[0].text +" : "+ tds[2].text 
+        #  portfolio_arr.append()
+         portfolio_arr.append(obj)
+        def department_portfolio():
+    url = portfolio()
+    page = requests.get(url)
+    soup = BeautifulSoup(page.content, 'html5lib') 
+    portfolio_arr = []
+    c=0
+    table = soup.find_all('div' , {"id":"home"})
+    f= table[0].find_all('table', {"class":"profilemain"})
+    for table in f:
+      c +=1
+    for i in range(0,c):
+      print("\n")
+      table = soup.find_all('table', )[i].tbody.findAll('tr')
+      for element in table :
+         obj = {}
+         tds=element.findAll('td')
+         obj=tds[0].text +" : "+ tds[2].text 
+        #  portfolio_arr.append()
+         portfolio_arr.append(obj)
+            
     return portfolio_arr
         
