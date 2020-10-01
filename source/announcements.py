@@ -34,4 +34,4 @@ while(n > 0):
     rev = rev * 10 + a 
     n = n // 10
       
-print(rev) 
+print(rer) 
